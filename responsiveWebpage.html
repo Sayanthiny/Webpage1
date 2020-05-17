@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>responsive webpages</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		header{
+			text-align: center;
+			padding: 15px;
+			background-color:#e5e5e5;
+		}
+
+		.menu{
+			width: 20%;
+			float: left;
+			text-align: center;
+		}
+
+		.menu a{
+			background-color: #e5e5e5;
+			padding: 8px;
+			margin-top:7px;
+			display: block;
+			width: 100%;
+			color: black;
+		}
+		.main{
+			width: 60%;
+			padding: 0 20px;
+			float: left;
+
+		}
+		.right{
+			background-color: #e5e5e5;
+			text-align: center;
+			padding: 15px;
+			margin-top: 7px;
+			width: 20%;
+			float: left;
+		}
+		@media only screen and (max-width: 620px){
+			.menu, .main, .right{
+				width: 100%;
+			}
+			
+		}
+		footer{
+			background-color: #e5e5e5;
+			text-align: center;
+			padding: 10px;
+			margin-top: 7px;
+		}
+
+	</style>
+</head>
+<body>
+
+<header><h2>Hello World</h2></header>
+<div style="overflow: auto">	
+	<div class="menu">
+		<a href="#">Link1</a>
+		<a href="#">Link2</a>
+		<a href="#">Link3</a>
+		<a href="#">Link4</a>
+	</div>
+
+	<div class="main">
+		<h2>Lorum Ipsum</h2>
+		<p>Lorum ipsum sit dolor sit amet, consecteuer adipisicing elit,see diam nonummy nibh euismod tincidunt ut laoreet doloree magna aliqueam erat volutpat</p>
+	</div>
+
+	<div class="right">
+		<h2>About</h2>
+		<p>Lorum ipsum sit dolor sit amet, consecteuer adipisicing elit</p>
+	</div>
+</div>
+
+<footer>
+	<p>@copyright w3schools.com</p>
+</footer>
+
+
+
+
+</body>
+</html>
